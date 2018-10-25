@@ -1,0 +1,58 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-image: linear-gradient(
+    to right bottom,
+    #e53d00,
+    #ef7500,
+    #f6a21c,
+    #fbcb45,
+    #fff373
+  );
+  height: 100vh;
+  width: 100vw;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+
+.flex-child {
+  margin: 2vh auto 5px auto;
+  background-color: #aedcdc;
+  border-radius: 5px;
+}
+
+form {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+label {
+  color: #fcfff7;
+}
+
+.input {
+  text-align: center;
+  background-color: #046865;
+  height: 10vh;
+  border: none;
+  font-size: 20px;
+  color: #fcfff7;
+}
+
+button {
+  font-size: 15px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: #49b1b1;
+  color: #fcfff7;
+  transition: color 300ms ease-in, background-color 300ms ease-in;
+}
