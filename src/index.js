@@ -36,15 +36,14 @@ function App() {
             onChange={e => handleNameChange(e)}
           />
         </form>
-        {word.length >= 1 && (
-          <button
-            className="flex-child"
-            title="save to localstorage"
-            onClick={() => saveToLocalStorage(word)}
-          >
-            Add word to localStorage
-          </button>
-        )}
+        <button
+          disabled={word < 1}
+          className="flex-child"
+          title="save to localstorage"
+          onClick={() => saveToLocalStorage(word)}
+        >
+          Add word to localStorage
+        </button>
         <button className="flex-child" onClick={() => clearLocalStorage()}>
           Clear localStorage
         </button>

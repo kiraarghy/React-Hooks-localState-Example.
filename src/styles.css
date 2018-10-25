@@ -51,6 +51,10 @@ button {
   padding: 5px 10px 5px;
 }
 
+button:disabled {
+  pointer-events: none;
+}
+
 button:hover {
   background-color: #49b1b1;
   color: #fcfff7;
