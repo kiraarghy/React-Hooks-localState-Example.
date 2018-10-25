@@ -10,7 +10,7 @@
     #fff373
   );
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .flex {
@@ -54,5 +54,5 @@ button {
 button:hover {
   background-color: #49b1b1;
   color: #fcfff7;
-  transition: color 300ms ease-in, background-color 300ms ease-in;
+  transition: color 200ms ease-in, background-color 300ms ease-in;
 }

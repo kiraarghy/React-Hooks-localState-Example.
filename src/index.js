@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 
 import "./styles.css";
@@ -9,7 +9,6 @@ function App() {
       ? ""
       : window.localStorage.getItem("word")
   );
-
   const saveToLocalStorage = word => {
     window.localStorage.setItem("word", word);
   };
@@ -37,13 +36,15 @@ function App() {
             onChange={e => handleNameChange(e)}
           />
         </form>
-        <button
-          className="flex-child"
-          title="save to localstorage"
-          onClick={() => saveToLocalStorage(word)}
-        >
-          Add word to localStorage
-        </button>
+        {word.length >= 1 && (
+          <button
+            className="flex-child"
+            title="save to localstorage"
+            onClick={() => saveToLocalStorage(word)}
+          >
+            Add word to localStorage
+          </button>
+        )}
         <button className="flex-child" onClick={() => clearLocalStorage()}>
           Clear localStorage
         </button>
